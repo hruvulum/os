@@ -1,11 +1,12 @@
 name: os
-description: My custom secureblue image
+description: Richard's custom os image
 base-image: ghcr.io/secureblue/silverblue-main-hardened
 image-version: latest
 modules:
   - type: files
     files:
-      - usr: /usr
+      - source: system
+        destination: /
   - type: script
     snippets:
       - "ln -s /var/home/r /r"
