@@ -6,4 +6,10 @@ modules:
   - type: files
     files:
       - usr: /usr
-      
+  - type: script
+    snippets:
+      - "ln -s /var/home/r /r"
+      - "ln -s /var/home/r/da /da"
+      - "ln -s /var/home/r/o /o"
+      - "ln -s /var/home/r/dup /dup"
+      - "ln -s /var/home/r/repos /repos"
